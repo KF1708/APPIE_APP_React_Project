@@ -1,0 +1,320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .makealign {
+    @apply flex items-center p-1 gap-1 font-bold;
+  }
+
+  .center {
+    @apply flex items-center justify-center;
+  }
+
+  .container {
+    @apply max-w-screen-xl mx-auto;
+  }
+
+  .footer-section {
+    @apply text-slate-600 text-base font-semibold mb-2;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(248, 249, 250);
+}
+
+.navbar-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-half {
+  display: flex;
+  gap: 30px;
+}
+
+.icon {
+  padding-top: 6px;
+}
+
+.icon-p {
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+.navbar-p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(7, 119, 247);
+}
+
+.hero {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(248, 249, 250);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero-section {
+  margin-top: 50px;
+}
+
+.hero-section h3 {
+  color: rgb(7, 119, 247);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero-section h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: large;
+}
+
+.hero-btn {
+  padding-top: 30px;
+  display: flex;
+  font-weight: 500;
+}
+
+.hero-btn-ios {
+  padding: 10px 20px;
+  margin-right: 18px;
+  border-radius: 5px;
+  font-size: large;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.hero-btn-ios:hover {
+  color: black;
+  background-color: white;
+}
+
+.hero-btn-android {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: large;
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.hero-btn-android:hover {
+  color: aliceblue;
+  background-color: black;
+}
+
+.design {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(234, 237, 240);
+  /* height: 700px; */
+  background-image: url("../public/images/shape-1.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.design-section {
+  margin: 10px;
+  text-align: center;
+}
+
+.design-section h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.design-card {
+  margin: 10px;
+  display: flex;
+  margin-top: 50px;
+  gap: 50px;
+  padding: 10px;
+}
+
+.card {
+  text-align: center;
+}
+
+.design-section p {
+  font-size: large;
+}
+
+.flow-section {
+  transition: all 1s ease-in-out;
+}
+
+.flow-img {
+  height: 500px;
+}
+
+.flow-header-name {
+  width: 165px;
+}
+
+.flow-icon {
+  font-size: 32px;
+}
+
+.stage-section-icon {
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.stage-btn:hover {
+  background-color: rgb(77, 118, 252);
+  color: white;
+}
+
+.stage-img {
+  width: 590px;
+  height: 400px;
+}
+
+.plan-btn:hover {
+  background-color: rgb(248, 69, 45);
+  color: aliceblue;
+}
+
+.choose-section-one {
+  height: 460px;
+}
+
+.choose-section-middle {
+  height: 510px;
+}
+
+.choose-section-last {
+  height: 550px;
+}
+
+.toggle-btn {
+  background-color: rgb(246, 250, 253);
+  border: 1px solid white;
+  width: 80px;
+  height: 40px;
+  transition: background-color 0.1s ease, bordeer-color 0.2s ease;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.toggle-btn .thumb {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(57, 110, 255);
+  transform: translateX(0);
+  transition: left 0.15s ease;
+  position: absolute;
+  left: 3px;
+  top: 50;
+  transform: translateY(-50%);
+}
+
+.toggle-btn.toggled {
+  background-color: white;
+}
+
+.toggle-btn:hover {
+  border-color: white;
+}
+
+.toggle-btn.toggled .thumb {
+  background-color: rgb(57, 110, 255);
+  left: calc(50px - 10px);
+}
+
+.object-cover {
+  transition: all 0.3s ease-out 0s;
+  opacity: 10;
+}
+
+.object-cover:hover {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+
+.object-cover:hover .team-icons {
+  opacity: 1;
+}
+
+.team-icons {
+  max-height: 0;
+  opacity: 0;
+  transition: max-heigh 1s;
+}
+
+.anticon * {
+  border-radius: 100%;
+  background-color: rgb(58, 141, 250);
+  color: aliceblue;
+  width: 30px;
+  height: 30px;
+  font-weight: 200;
+}
+
+.collaps-section {
+  width: 563px;
+}
+
+.qus-section {
+  background-image: url("/images/faq-shape.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.block-section {
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.block-section img {
+  transition: all 0.3s ease-in-out 0s;
+  width: 100%;
+}
+
+.block-section img:hover {
+  transform: scale(0.9);
+}
+
+.block-section:hover {
+  transform: scale(1.05);
+}
+
+.start-section {
+  border-radius: 20px;
+  height: 395px;
+  background-image: url("/images/project-bg.jpg");
+}
+
+.footer-one-icon:hover {
+  background-color: rgb(58, 141, 250);
+  color: white;
+  transition: all 0.3s ease-in-out 0s;
+}
