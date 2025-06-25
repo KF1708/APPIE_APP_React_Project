@@ -1,4 +1,4 @@
-import Toggle from "../shared/toggle";
+import Toggle from "../shared/Toggle";
 import Plan from "./Plan";
 
 const ChoosePlan = () => {
